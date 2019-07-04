@@ -3,10 +3,14 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		46245F771468B315259FF17A /* Pods_German_A1_Vocabulary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89BA34A6C3E799BDA0A8A5B7 /* Pods_German_A1_Vocabulary.framework */; };
+		DC9C213C22CAB9CE00CA0A4E /* UIButtonExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC9C213B22CAB9CE00CA0A4E /* UIButtonExtensions.swift */; };
+		DC9C215C22CE6E6600CA0A4E /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC9C215B22CE6E6600CA0A4E /* Question.swift */; };
+		DC9C215F22CE6F6100CA0A4E /* WordBank.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC9C215E22CE6F6100CA0A4E /* WordBank.swift */; };
 		DCF4D1AC22C69BD9005DF049 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCF4D1AB22C69BD9005DF049 /* AppDelegate.swift */; };
 		DCF4D1AE22C69BD9005DF049 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCF4D1AD22C69BD9005DF049 /* ViewController.swift */; };
 		DCF4D1B122C69BD9005DF049 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DCF4D1AF22C69BD9005DF049 /* Main.storyboard */; };
@@ -16,6 +20,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		06BCE1B212FDD40ADCA2EB63 /* Pods-German A1 Vocabulary.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-German A1 Vocabulary.release.xcconfig"; path = "Target Support Files/Pods-German A1 Vocabulary/Pods-German A1 Vocabulary.release.xcconfig"; sourceTree = "<group>"; };
+		1490E3AED70C4171BC4A3120 /* Pods-German A1 Vocabulary.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-German A1 Vocabulary.debug.xcconfig"; path = "Target Support Files/Pods-German A1 Vocabulary/Pods-German A1 Vocabulary.debug.xcconfig"; sourceTree = "<group>"; };
+		89BA34A6C3E799BDA0A8A5B7 /* Pods_German_A1_Vocabulary.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_German_A1_Vocabulary.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DC9C213B22CAB9CE00CA0A4E /* UIButtonExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButtonExtensions.swift; sourceTree = "<group>"; };
+		DC9C215B22CE6E6600CA0A4E /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
+		DC9C215E22CE6F6100CA0A4E /* WordBank.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordBank.swift; sourceTree = "<group>"; };
 		DCF4D1A822C69BD9005DF049 /* German A1 Vocabulary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "German A1 Vocabulary.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DCF4D1AB22C69BD9005DF049 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DCF4D1AD22C69BD9005DF049 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -31,17 +41,47 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				46245F771468B315259FF17A /* Pods_German_A1_Vocabulary.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		04348154F4FA7C725B79F343 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				89BA34A6C3E799BDA0A8A5B7 /* Pods_German_A1_Vocabulary.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2BBD7FD8E0076D7788C3F434 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1490E3AED70C4171BC4A3120 /* Pods-German A1 Vocabulary.debug.xcconfig */,
+				06BCE1B212FDD40ADCA2EB63 /* Pods-German A1 Vocabulary.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		DC9C215D22CE6F3800CA0A4E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				DC9C215B22CE6E6600CA0A4E /* Question.swift */,
+				DC9C215E22CE6F6100CA0A4E /* WordBank.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		DCF4D19F22C69BD9005DF049 = {
 			isa = PBXGroup;
 			children = (
+				DC9C215D22CE6F3800CA0A4E /* Model */,
 				DCF4D1AA22C69BD9005DF049 /* German A1 Vocabulary */,
 				DCF4D1A922C69BD9005DF049 /* Products */,
+				2BBD7FD8E0076D7788C3F434 /* Pods */,
+				04348154F4FA7C725B79F343 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,6 +98,7 @@
 			children = (
 				DCF4D1AB22C69BD9005DF049 /* AppDelegate.swift */,
 				DCF4D1AD22C69BD9005DF049 /* ViewController.swift */,
+				DC9C213B22CAB9CE00CA0A4E /* UIButtonExtensions.swift */,
 				DCF4D1AF22C69BD9005DF049 /* Main.storyboard */,
 				DCF4D1B522C69BDB005DF049 /* Assets.xcassets */,
 				DCF4D1B722C69BDB005DF049 /* LaunchScreen.storyboard */,
@@ -74,9 +115,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DCF4D1BD22C69BDB005DF049 /* Build configuration list for PBXNativeTarget "German A1 Vocabulary" */;
 			buildPhases = (
+				8A24DFDB19A0011CEF1AB083 /* [CP] Check Pods Manifest.lock */,
 				DCF4D1A422C69BD9005DF049 /* Sources */,
 				DCF4D1A522C69BD9005DF049 /* Frameworks */,
 				DCF4D1A622C69BD9005DF049 /* Resources */,
+				05B89A4237A1D92792B2BF4E /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -133,14 +176,59 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		05B89A4237A1D92792B2BF4E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-German A1 Vocabulary/Pods-German A1 Vocabulary-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-German A1 Vocabulary/Pods-German A1 Vocabulary-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-German A1 Vocabulary/Pods-German A1 Vocabulary-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8A24DFDB19A0011CEF1AB083 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-German A1 Vocabulary-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		DCF4D1A422C69BD9005DF049 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DC9C215C22CE6E6600CA0A4E /* Question.swift in Sources */,
 				DCF4D1B422C69BD9005DF049 /* German_A1_Vocabulary.xcdatamodeld in Sources */,
+				DC9C213C22CAB9CE00CA0A4E /* UIButtonExtensions.swift in Sources */,
 				DCF4D1AE22C69BD9005DF049 /* ViewController.swift in Sources */,
 				DCF4D1AC22C69BD9005DF049 /* AppDelegate.swift in Sources */,
+				DC9C215F22CE6F6100CA0A4E /* WordBank.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,6 +372,7 @@
 		};
 		DCF4D1BE22C69BDB005DF049 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1490E3AED70C4171BC4A3120 /* Pods-German A1 Vocabulary.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -301,6 +390,7 @@
 		};
 		DCF4D1BF22C69BDB005DF049 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 06BCE1B212FDD40ADCA2EB63 /* Pods-German A1 Vocabulary.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
