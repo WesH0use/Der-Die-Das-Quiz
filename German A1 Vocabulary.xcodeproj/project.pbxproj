@@ -74,13 +74,41 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		DC9C216022CE7DC400CA0A4E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				DCF4D1AF22C69BD9005DF049 /* Main.storyboard */,
+				DCF4D1B522C69BDB005DF049 /* Assets.xcassets */,
+				DC9C213B22CAB9CE00CA0A4E /* UIButtonExtensions.swift */,
+				DCF4D1B722C69BDB005DF049 /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		DC9C216122CE7E1E00CA0A4E /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				DCF4D1AB22C69BD9005DF049 /* AppDelegate.swift */,
+				DCF4D1AD22C69BD9005DF049 /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		DC9C216422CE7E7600CA0A4E /* Supporting FIles */ = {
+			isa = PBXGroup;
+			children = (
+				DCF4D1BA22C69BDB005DF049 /* Info.plist */,
+				DCF4D1B222C69BD9005DF049 /* German_A1_Vocabulary.xcdatamodeld */,
+			);
+			path = "Supporting FIles";
+			sourceTree = "<group>";
+		};
 		DCF4D19F22C69BD9005DF049 = {
 			isa = PBXGroup;
 			children = (
-				DC9C215D22CE6F3800CA0A4E /* Model */,
 				DCF4D1AA22C69BD9005DF049 /* German A1 Vocabulary */,
-				DCF4D1A922C69BD9005DF049 /* Products */,
 				2BBD7FD8E0076D7788C3F434 /* Pods */,
+				DCF4D1A922C69BD9005DF049 /* Products */,
 				04348154F4FA7C725B79F343 /* Frameworks */,
 			);
 			sourceTree = "<group>";
@@ -96,14 +124,10 @@
 		DCF4D1AA22C69BD9005DF049 /* German A1 Vocabulary */ = {
 			isa = PBXGroup;
 			children = (
-				DCF4D1AB22C69BD9005DF049 /* AppDelegate.swift */,
-				DCF4D1AD22C69BD9005DF049 /* ViewController.swift */,
-				DC9C213B22CAB9CE00CA0A4E /* UIButtonExtensions.swift */,
-				DCF4D1AF22C69BD9005DF049 /* Main.storyboard */,
-				DCF4D1B522C69BDB005DF049 /* Assets.xcassets */,
-				DCF4D1B722C69BDB005DF049 /* LaunchScreen.storyboard */,
-				DCF4D1BA22C69BDB005DF049 /* Info.plist */,
-				DCF4D1B222C69BD9005DF049 /* German_A1_Vocabulary.xcdatamodeld */,
+				DC9C215D22CE6F3800CA0A4E /* Model */,
+				DC9C216022CE7DC400CA0A4E /* View */,
+				DC9C216122CE7E1E00CA0A4E /* Controller */,
+				DC9C216422CE7E7600CA0A4E /* Supporting FIles */,
 			);
 			path = "German A1 Vocabulary";
 			sourceTree = "<group>";
