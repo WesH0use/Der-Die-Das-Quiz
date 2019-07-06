@@ -20,7 +20,7 @@ extension UIButton {
         pulse.toValue = 1.0
         pulse.autoreverses = true
         pulse.repeatCount = 2
-        pulse.initialVelocity = 0.5
+        pulse.initialVelocity = 1
         pulse.damping = 1.0
         layer.add(pulse, forKey: nil)
     }
@@ -28,7 +28,7 @@ extension UIButton {
     func flash() {
 
         let flash = CABasicAnimation(keyPath: "opacity")
-        flash.duration = 0.5
+        flash.duration = 0.3
         flash.fromValue = 1
         flash.toValue = 0.1
         flash.timingFunction = CAMediaTimingFunction(name: CAMediaTimingFunctionName.easeInEaseOut)

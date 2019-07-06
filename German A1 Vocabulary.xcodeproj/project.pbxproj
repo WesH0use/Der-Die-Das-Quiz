@@ -97,8 +97,6 @@
 		DC9C216422CE7E7600CA0A4E /* Supporting FIles */ = {
 			isa = PBXGroup;
 			children = (
-				DCF4D1BA22C69BDB005DF049 /* Info.plist */,
-				DCF4D1B222C69BD9005DF049 /* German_A1_Vocabulary.xcdatamodeld */,
 			);
 			path = "Supporting FIles";
 			sourceTree = "<group>";
@@ -124,6 +122,8 @@
 		DCF4D1AA22C69BD9005DF049 /* German A1 Vocabulary */ = {
 			isa = PBXGroup;
 			children = (
+				DCF4D1BA22C69BDB005DF049 /* Info.plist */,
+				DCF4D1B222C69BD9005DF049 /* German_A1_Vocabulary.xcdatamodeld */,
 				DC9C215D22CE6F3800CA0A4E /* Model */,
 				DC9C216022CE7DC400CA0A4E /* View */,
 				DC9C216122CE7E1E00CA0A4E /* Controller */,
