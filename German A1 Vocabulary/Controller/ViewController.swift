@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import RealmSwift
 
 class ViewController: UIViewController {
     
@@ -15,6 +14,8 @@ class ViewController: UIViewController {
     var pickedAnswer : String = ""
     var questionNumber : Int = 0
     var score : Int = 0
+    var wrongAnswers : [String] = []
+    var rightAnswers : [String] = []
     
     let derColor = UIColor.blue
     let dieColor = UIColor.red
@@ -35,40 +36,37 @@ class ViewController: UIViewController {
 
 
     @IBAction func answerPressed(_ sender: UIButton) {
-        let correctAnswer = allWords.list[questionNumber].definiteArticle
+        
         if sender.tag == 1 {
             pickedAnswer = "Der"
-            if pickedAnswer == correctAnswer {
-                buttonDer.flash()
-            } else {
-                answerWrong()
-                buttonDer.shake()
-            }
+            answerCheck()
+            
         } else if sender.tag == 2 {
             pickedAnswer = "Die"
-            if pickedAnswer == correctAnswer {
-                answerCorrect()
-                buttonDie.flash()
-            } else {
-                answerWrong()
-                buttonDie.shake()
-            }
+            answerCheck()
+              
         } else if sender.tag == 3 {
             pickedAnswer = "Das"
-            if pickedAnswer == correctAnswer {
-                answerCorrect()
-                buttonDas.flash()
-            } else {
-                answerWrong()
-                buttonDas.shake()
-            }
+            answerCheck()
         }
         questionNumber += 1
         nextWord()
         print(pickedAnswer)
     }
     
-    func answerCorrect() {
+    func answerCheck() {
+        let correctAnswer = allWords.list[questionNumber].definiteArticle
+        if pickedAnswer == correctAnswer {
+            score += 1
+            buttonDer.flash()
+            // HOW DO I GET THE SELECTED BUTTON TO ANIMATE
+            rightAnswers.append(allWords.list[questionNumber].germanWord)
+        } else {
+            buttonDer.shake()
+            wrongAnswers.append(allWords.list[questionNumber].germanWord)
+            // HOW DO I GET THE SELECTED BUTTON TO ANIMATE
+        }
+
         print("correct")
         print(questionNumber)
         //What happens when answer is correct
@@ -84,6 +82,10 @@ class ViewController: UIViewController {
     
     
     func nextWord() {
+        
+        questionLabel.minimumScaleFactor = 0.5
+        questionLabel.numberOfLines = 1
+        questionLabel.adjustsFontSizeToFitWidth = true
         
         if questionNumber % 2 == 0 {
             questionLabel.transitionReveal(0.4)

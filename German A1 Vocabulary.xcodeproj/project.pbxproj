@@ -94,13 +94,6 @@
 			path = Controller;
 			sourceTree = "<group>";
 		};
-		DC9C216422CE7E7600CA0A4E /* Supporting FIles */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "Supporting FIles";
-			sourceTree = "<group>";
-		};
 		DCF4D19F22C69BD9005DF049 = {
 			isa = PBXGroup;
 			children = (
@@ -127,7 +120,6 @@
 				DC9C215D22CE6F3800CA0A4E /* Model */,
 				DC9C216022CE7DC400CA0A4E /* View */,
 				DC9C216122CE7E1E00CA0A4E /* Controller */,
-				DC9C216422CE7E7600CA0A4E /* Supporting FIles */,
 			);
 			path = "German A1 Vocabulary";
 			sourceTree = "<group>";
